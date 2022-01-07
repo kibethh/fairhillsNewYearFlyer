@@ -1,0 +1,18 @@
+.logo {
+  // grid-column: container-start / container-end;
+  // position: fixed;
+  // top: 0;
+  // left: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -1%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 25rem;
+  width: 100%;
+  z-index: 11;
+  @extend %bg;
+}

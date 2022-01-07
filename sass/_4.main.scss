@@ -1,0 +1,34 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  // background-color: $color4_;
+  @extend %para-padding;
+  position: relative;
+  // img {
+  //   position: absolute;
+  //   top: 0;
+  //   // left: 50%;
+  //   // transform: translateX(-50%);
+  //   opacity: 0.65;
+  //   width: 90%;
+  //   height: 100%;
+  //   border-radius: 2px;
+  // }
+  &__title {
+    font-size: font-size(font-size-regular);
+    font-weight: font-weight(font-weight-bold);
+    color: $color-red;
+    z-index: 2;
+  }
+  &__item {
+    font-size: font-size(font-size-small);
+    color: $ColorGreen;
+    font-weight: font-weight(font-weight-bold);
+    // background-color: $color-selection-font;
+    z-index: 2;
+    position: relative;
+    z-index: 1;
+  }
+}

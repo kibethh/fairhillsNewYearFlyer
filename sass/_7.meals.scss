@@ -1,0 +1,33 @@
+.meals {
+  // grid-column: container-start / container-end;
+  // @extend %sec-padding;
+  display: flex;
+  flex-direction: column;
+  // @extend %para-padding;
+  // justify-content: center;
+  // align-items: center;
+  // color: $color-pseudo-before-m;
+  position: relative;
+  &__title {
+    font-size: font-size(font-size-regular);
+    color: $color-red;
+    font-weight: font-weight(font-weight-black);
+  }
+  &__item {
+    font-size: font-size(font-size-small);
+    font-weight: font-weight(font-weight-bold);
+    color: $ColorGreen;
+    @extend %after;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    // left: 50%;
+    // transform: translateX(-50%);
+    // opacity: 0.35;
+    width: 500px;
+    height: 100%;
+    border-radius: 2px;
+  }
+}

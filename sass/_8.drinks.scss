@@ -1,0 +1,41 @@
+.drinks {
+  // grid-column: container-start / container-end;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // @extend %sec-padding;
+  @extend %para-padding;
+
+  // background-color: $color-pink;
+  position: relative;
+  &__title {
+    font-size: font-size(font-size-regular);
+    // color: white;
+    // background-color: $color-selection-background;
+    font-weight: font-weight(font-weight-black);
+    color: $color-red;
+    // color: transparent;
+    // -webkit-background-clip: text;
+    z-index: 4;
+    @extend %before;
+  }
+  &__item {
+    color: $ColorGreen;
+    font-size: font-size(font-size-small);
+    @extend %after;
+    font-weight: font-weight(font-weight-bold);
+
+    // background-color: $color-selection-font;
+  }
+  img {
+    position: absolute;
+    top: 0;
+    // left: 50%;
+    // transform: translateX(-50%);
+    opacity: 0.55;
+    width: 80%;
+    height: 100%;
+    border-radius: 2px;
+  }
+}
